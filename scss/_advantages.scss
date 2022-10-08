@@ -1,0 +1,119 @@
+@import "variable";
+
+section:nth-of-type(3) {
+    background-color: $background;
+    padding-top: 100px;
+        @media (max-width: 1280px) {
+            padding-top: 70px;
+        }
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1280px;
+        margin: 0 auto;
+        @media (max-width: 1296px) {
+            padding-left: 1em;
+            padding-right: 1em;
+        }
+        @media (max-width: 1280px) {
+            overflow: scroll;
+        }
+        .column:nth-of-type(1) {
+            background-image: url(../img/main/advantages/backgroundOne.jpg);
+            background-repeat: no-repeat;
+            padding: 40px 155px 40px 40px;
+            @media (max-width: 1280px) {
+                margin-right: 30px;
+            }
+            @media (max-width: 576px) {
+                padding: 20px 70px 20px 18px;
+                background-image: url(../img/main/advantages/backgroundOneMobile.jpg);
+                margin-right: 20px;
+            }
+            h2 {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 22px;
+                width: 380px;
+                @media (max-width: 576px) {
+                    width: 170px;
+                    margin-bottom: 7px;
+                }
+                span:nth-of-type(1) {
+                    font-size: 32px;
+                    font-weight: 700;
+                    color: white;
+                    margin-bottom: 4px;
+                    @media (max-width: 576px) {
+                        font-size: 18px;
+                        margin-bottom: 0;
+                        line-height: 21px;
+                    }
+                }
+                span:nth-of-type(2) {
+                    font-size: 25px;
+                    font-weight: 400;
+                    color: white;
+                    @media (max-width: 576px) {
+                        font-size: 18px;
+                    }
+                }
+            }
+            img {
+                width: 374px;
+                height: 228px;
+                @media (max-width: 576px) {
+                    width: 168px;
+                    height: 102px;
+                }
+            }
+        }
+        .column:nth-of-type(2) {
+            background-image: url(../img/main/advantages/backgroundTo.jpg);
+            background-repeat: no-repeat;
+            padding: 40px 155px 40px 40px;
+            position: relative;
+            @media (max-width: 576px) {
+                padding: 20px 33px 20px 18px;
+                background-image: url(../img/main/advantages/backgroundToMobile.jpg);
+            }
+            h2 {
+                width: 368px;
+                line-height: 29px;
+                @media (max-width: 576px) {
+                    width: 208px;
+                }
+                span:nth-of-type(1),
+                span:nth-of-type(3) {
+                    font-size: 25px;
+                    font-weight: 400;
+                    color: white;
+                    @media (max-width: 576px) {
+                        font-size: 18px;
+                    }
+                }
+                span:nth-of-type(2) {
+                    font-size: 32px;
+                    font-weight: 700;
+                    color: white;
+                    @media (max-width: 576px) {
+                        font-size: 18px;
+                    }
+                }
+            }
+            img {
+                position: absolute;
+                bottom: 80px;
+                right: 56px;
+                width: 215px;
+                height: 215px;
+                @media (max-width: 576px) {
+                    bottom: 34px;
+                    right: 14px;
+                    width: 82px;
+                    height: 82px;
+                }
+            }
+        }
+    }
+}
